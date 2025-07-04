@@ -8,6 +8,8 @@ Sabe quando você precisa montar um móvel novo e segue aquele manual cheio de p
 
 E para isso usamos uma **linguagem de programação**, que é como um idioma que o computador entende. No nosso caso, vamos usar o PHP, que é muito popular para desenvolvimento web.
 
+- Acesse esse tutorial e siga-o para instalar o PHP: [Instalando o PHP](https://www.alura.com.br/artigos/php-instalacao-primeiro-codigo?utm_term=&utm_campaign=topo-aon-search-gg-dsa-artigos_conteudos&utm_source=google&utm_medium=cpc&campaign_id=11384329873_164240702375_703853654617&utm_id=11384329873_164240702375_703853654617&hsa_acc=7964138385&hsa_cam=topo-aon-search-gg-dsa-artigos_conteudos&hsa_grp=164240702375&hsa_ad=703853654617&hsa_src=g&hsa_tgt=dsa-2276348409543&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=11384329873&gbraid=0AAAAADpqZICwr2_THDg4OGk1FA0xYZwBy&gclid=Cj0KCQjw1JjDBhDjARIsABlM2Ss_7uQmZebDGWjmQV7W3itJbg7VSHI21Y8oepAwhWkgLgHnrxLfBmQaAmAbEALw_wcB)
+
 ### O que é uma Linguagem de Programação?
 É uma lingua como o português ou inglês, mas feita para que os computadores consigam entender. Cada linguagem tem suas próprias regras e sintaxe, assim como cada idioma tem gramática e vocabulário. Se você já ouviu falar de JavaScript, Python ou Java, essas são outras linguagens de programação. Cada uma tem suas características e é usada para diferentes propósitos.
 
