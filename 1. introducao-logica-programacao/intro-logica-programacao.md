@@ -67,6 +67,23 @@ $preco = 2500.00;
 echo "O produto é $produto e custa R$$preco.";
 ?>
 ```
+### Exercício 03 (Desafio de Recapitulação)
+Exiba uma mensagem personalizada na tela (comando `echo`), exibindo informações de uma venda, contendo o nome do produto, a quantidade vendida, o valor total da venda e o nome do operador da venda. Use variáveis para armazenar cada informação (`$variavel = valor`) e formate a saída em uma string (`echo "informação: $variavel"`). Exemplo:
+```php
+<?php
+$produto = "Celular";
+$quantidade = 3;
+$valorUnitario = 1200.00;
+$valorTotal = $quantidade * $valorUnitario;
+$operador = "Maria";
+
+echo "Operador: $operador\n";
+echo "Produto: $produto\n";
+echo "Quantidade: $quantidade\n";
+echo "Valor Unitário: R$$valorUnitario\n";
+echo "Valor Total: R$$valorTotal\n";
+?>
+```
 
 
 
