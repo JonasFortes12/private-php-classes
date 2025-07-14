@@ -98,3 +98,20 @@ if ($nota >= 7) {
 }
 ?>
 ```
+
+### Exercício 03 (Desafio de Recapitulação)
+Crie um programa que verifique se um número é positivo, negativo ou zero. Use a estrutura `if`, `else if` e `else` para exibir a mensagem correspondente.
+```php
+<?php
+$numero = -5; // Altere o valor para testar
+if ($numero > 0) {
+    echo "O número é positivo.";
+} else if ($numero < 0) {
+    echo "O número é negativo.";
+} else {
+    echo "O número é zero.";
+}
+?>
+```
+
+### Exercício
