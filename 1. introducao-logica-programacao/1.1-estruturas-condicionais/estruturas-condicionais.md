@@ -33,6 +33,21 @@ $resultado = (5 > 3 || 2 > 4); // $resultado será   true, pois pelo menos uma c
 $resultado = !(5 > 3); // $resultado será false, pois inverte o valor booleano da condição
 ``` 
 
+### Operadores Aritméticos
+Os operadores aritméticos são usados para realizar operações matemáticas. Os principais operadores aritméticos em PHP são:
+- `+`: Adição (soma)
+- `-`: Subtração (diferença)
+- `*`: Multiplicação (produto)
+- `/`: Divisão (quociente)
+- `%`: Módulo (resto da divisão)
+```php
+$soma = 5 + 3; // $soma será 8
+$subtracao = 5 - 3; // $subtracao será 2
+$multiplicacao = 5 * 3; // $multiplicacao será 15
+$divisao = 5 / 3; // $divisao será aproximadamente 1.67
+$modulo = 5 % 3; // $modulo será 2, que é o resto da divisão
+```
+
 
 
 ### Estrutura `if`
