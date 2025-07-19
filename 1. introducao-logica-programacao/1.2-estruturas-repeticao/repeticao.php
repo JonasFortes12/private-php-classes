@@ -25,7 +25,7 @@
  $i = 0;
  while($i < 5) {
     echo "\nNumero: $i";
-    $i = $i + 1;
+   $i = $i + 1;
  }
 
 /**
@@ -39,7 +39,7 @@ $arrayFrutas = ["maça", "banana", "uva"];
         //  0        1        2
 
 
-foreach(["maça", "banana", "uva"] as $fruta){
+foreach($arrayFrutas as $fruta){
     echo "\nFruta atual: $fruta ";
 }
 
