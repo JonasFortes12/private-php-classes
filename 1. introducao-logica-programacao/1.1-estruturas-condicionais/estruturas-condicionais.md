@@ -86,6 +86,41 @@ if ($nota >= 7) {
 }
 ?>
 ```
+
+### Estrutura `switch/case`
+A estrutura `switch/case` é uma alternativa ao uso de múltiplos `if` e `else if`. Ela é útil quando precisamos comparar uma variável com vários valores possíveis. O `switch` avalia a expressão e executa o bloco de código correspondente ao valor encontrado.
+```php
+<?php
+$dia = 3;
+switch ($dia) {
+    case 1:
+        echo "Domingo";
+        break;
+    case 2:
+        echo "Segunda-feira";
+        break;
+    case 3:
+        echo "Terça-feira";
+        break;
+    case 4:
+        echo "Quarta-feira";
+        break;
+    case 5:
+        echo "Quinta-feira";
+        break;
+    case 6:
+        echo "Sexta-feira";
+        break;
+    case 7:
+        echo "Sábado";
+        break;
+    default:
+        echo "Dia inválido";
+}
+?>
+```
+
+
 ### Exercício 01
 Crie um programa que verifique se uma pessoa é maior de idade (18 anos ou mais) e exiba uma mensagem apropriada. Use a estrutura `if` para verificar a idade.
 ```php  
@@ -114,19 +149,6 @@ if ($nota >= 7) {
 ?>
 ```
 
-### Exercício 03 (Desafio de Recapitulação)
-Crie um programa que verifique se um número é positivo, negativo ou zero. Use a estrutura `if`, `else if` e `else` para exibir a mensagem correspondente.
-```php
-<?php
-$numero = -5; // Altere o valor para testar
-if ($numero > 0) {
-    echo "O número é positivo.";
-} else if ($numero < 0) {
-    echo "O número é negativo.";
-} else {
-    echo "O número é zero.";
-}
-?>
-```
+### Exercício 03 - Switch/Case
+Crie um programa que receba um número de 0 a 12 e exiba o nome do mês correspondente. Use a estrutura `switch/case` para implementar essa lógica.
 
-### Exercício
