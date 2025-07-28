@@ -55,7 +55,15 @@ function get_nome_produto($codigo) // função recebe o código do produto e ret
         <li> <?php echo get_nome_produto($_GET['produto1']) . ' Qtd: ' . $_GET['qtd1'] . ' = R$' . $_GET['total1']; ?></li>
         <li> <?php echo get_nome_produto($_GET['produto2']) . ' Qtd: ' . $_GET['qtd2'] . ' = R$' . $_GET['total2']; ?></li>
         <li> <?php echo get_nome_produto($_GET['produto3']) . ' Qtd: ' . $_GET['qtd3'] . ' = R$' . $_GET['total3']; ?></li>
-        <li> <?php echo get_nome_produto($_GET['produto4']) . ' Qtd: ' . $_GET['qtd4'] . ' = R$' . $_GET['total4']; ?></li>
+        
+        <?php
+        $i = 1;
+        while ($i <= $_GET['qtd4']) {
+            echo "<li>" . get_nome_produto($_GET['produto4']) . " = R$" . $_GET['valor4'] . "</li>";
+            $i++;
+        }
+        echo "Total ". get_nome_produto($_GET['produto4']) . " = R$" . $_GET['total4'];
+        ?>
     </ul>
 
     <p>Total Geral: R$<?php echo number_format($_GET['total_geral'], 2, ','); ?> </p>

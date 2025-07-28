@@ -50,14 +50,8 @@
 
         <label for="">Produto-04</label>
         <select name="produto4">
-            <?php
-            $i = 1;
-            while ($i <= 100) {
-                echo "<option value='9'>Água com gás</option>";
-                echo "<option value='10'>Água sem gás</option>";
-                $i++;
-            }
-            ?>
+            <option value='9'>Água com gás</option>
+            <option value='10'>Água sem gás</option>
         </select>
 
         <label>Quantidade:</label>
