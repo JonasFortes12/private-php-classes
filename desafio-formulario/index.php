@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulário Xerox</title>
 </head>
+
 <body>
     <h2>Vendas Serviços</h2>
 
@@ -42,20 +44,21 @@
         <input type="number" name="qtd3" min="1" required />
         <br />
 
-        <label>Produto-04</label>
-        <select name="produto4">
-            <?php
-            $i = 0;
-            while ($i < 100) {
-                echo "<option value='agua_gas'>Água com gás</option>";
-                echo "<option value='agua_sem_gas'>Água sem gás</option>";
-                $i++;
-            }
-            ?>
-        </select>
-        <label>Quantidade:</label>
-        <input type="number" name="qtd4" min="1" required />
-        <br /><br />
+
+        <?php
+        for ($i = 1; $i <= 100; $i++) {
+            echo "<label>Produto 4 - #$i</label>";
+            echo "<select name='produto4_$i'>";
+            echo "<option value='agua_gas'>Água com gás</option>";
+            echo "<option value='agua_sem_gas'>Água sem gás</option>";
+            echo "</select>";
+
+            echo "<label>Quantidade:</label>";
+            echo "<input type='number' name='qtd4_$i' min='0' value='0' />";
+            echo "<br />";
+        }
+        ?>
+
 
         <h3>Forma de Pagamento</h3>
         <input type="radio" name="pagamento" value="Crédito" required /> Crédito
@@ -67,4 +70,5 @@
         <input type="submit" value="Enviar" />
     </form>
 </body>
+
 </html>

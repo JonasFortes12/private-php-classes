@@ -37,7 +37,22 @@ function getNomeProduto($codigo)
     <li><?php echo getNomeProduto($_GET['produto1']) . ' x' . $_GET['qtd1'] . ' = R$ ' . number_format($_GET['total1'], 2, ',', '.'); ?></li>
     <li><?php echo getNomeProduto($_GET['produto2']) . ' x' . $_GET['qtd2'] . ' = R$ ' . number_format($_GET['total2'], 2, ',', '.'); ?></li>
     <li><?php echo getNomeProduto($_GET['produto3']) . ' x' . $_GET['qtd3'] . ' = R$ ' . number_format($_GET['total3'], 2, ',', '.'); ?></li>
-    <li><?php echo getNomeProduto($_GET['produto4']) . ' x' . $_GET['qtd4'] . ' = R$ ' . number_format($_GET['total4'], 2, ',', '.'); ?></li>
+</ul>
+
+<h3>Produtos 4</h3>
+<ul>
+    <?php
+    $produtos4_count = $_GET['eprodutos4_count'] ?? 0;
+    for ($i = 0; $i < $produtos4_count; $i++) {
+        $desc = $_GET["produtos4_desc_$i"];
+        $qtd = $_GET["produtos4_qtd_$i"];
+        $valor = $_GET["produtos4_valor_$i"];
+        $subtotal = $_GET["produtos4_subtotal_$i"];
+
+        echo "<li>$desc x$qtd = R$ " . number_format($subtotal, 2, ',', '.') .
+            " (R$ " . number_format($valor, 2, ',', '.') . " un)</li>";
+    }
+    ?>
 </ul>
 
 <p><strong>Total Geral:</strong> R$ <?php echo number_format($_GET['total_geral'], 2, ',', '.'); ?></p>
